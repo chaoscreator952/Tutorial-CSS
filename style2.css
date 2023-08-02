@@ -1,0 +1,128 @@
+/* unvisited link */
+a#link:link {
+    color: red;
+}
+
+/* visited link */
+a#link:visited {
+    color: green;
+}
+
+/* mouse over link */
+a#link:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a#link:active {
+    color: blue;
+}
+
+button#button:link,
+button#button:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button#button:hover,
+button#button:active {
+    background-color: green;
+    color: white;
+}
+
+ul.b {
+    list-style-type: circle;
+}
+
+ol.a {
+    list-style-type: lower-alpha;
+}
+
+#table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table td,
+#table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table tr:hover {
+    background-color: #ddd;
+}
+
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
+
+h1.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+    width: 400px;
+    height: 200px;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 50px;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+
+div.overflow {
+    background-color: coral;
+    width: 500px;
+    height: 100px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+img {
+    float: right;
+}

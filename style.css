@@ -1,7 +1,19 @@
 /* The universal selector (*) selects all HTML elements on the page. */
 * {
-  text-align: center;
+  text-align: justify;
   color: black;
+}
+
+/* The id selector uses the id attribute of an HTML element to select a specific element. */
+#id {
+  text-align: center;
+  color: red;
+}
+
+/* The class selector selects HTML elements with a specific class attribute. */
+.class {
+  text-align: center;
+  color: green;
 }
 
 /* The grouping selector selects all the HTML elements with the same style definitions. */
@@ -12,157 +24,108 @@ p {
   color: black;
 }
 
-/* The id selector uses the id attribute of an HTML element to select a specific element. */
-#para1 {
-  text-align: center;
-  color: red;
-}
-
-/* The class selector selects HTML elements with a specific class attribute. */
-.center {
-  text-align: center;
-  color: green;
-}
 
 /* You can also specify that only specific HTML elements should be affected by a class. */
-p.center {
-  text-align: center;
+p.class2 {
+  font-size: larger;
   color: blue;
 }
 
-body {
+div#para1 {
   background-image: url(gradient.jpg);
   background-repeat: repeat-x;
   background-position: right top;
+  opacity: 0.75;
 }
 
-div#param1 {
-  height: 200px;
-  width: 50%;
+div#para2 {
+  height: 100%;
+  width: 75%;
+  color: orange;
   background-color: tomato;
-  opacity: 0.75;
   /* background-color: rgb(255, 99, 71); */
   /* background-color: #ff6347; */
   /* background-color: hsl(9, 100%, 64%, 0.5); */
-  /* background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
-  color: orange;
-  text-align: center;
-  text-align-last: justify;
+  /* background: rgba(0, 128, 0, 0.3); Green background with 30% opacity */
+  /* text-align: center; */
+  /* text-align-last: justify; */
   direction: rtl;
   unicode-bidi: bidi-override;
-  border: 2px solid dodgerblue;
-  border-style: dashed;
-  border-width: medium;
-  border-width: 25px 10px 4px 35px;
-  /* 25px top, 10px right, 4px bottom and 35px left */
+  /* border: 2px solid dodgerblue; */
+  /* border-style: dashed; */
+  /* border-width: medium; */
+  border-width: 5px 10px 20px 40px;
+  /* 5px top, 10px right, 20px bottom and 40px left */
   /* border-color: green; */
   border-color: red green blue yellow;
   /* red top, green right, blue bottom and yellow left */
-  /* border-top-style: dotted; */
-  /* border-right-style: solid; */
-  /* border-bottom-style: dotted; */
-  /* border-left-style: solid; */
-  border-style: dotted solid double dashed;
-  border-radius: 5px;
-  /* margin-top: 100px; */
-  /* margin-bottom: 100px; */
-  /* margin-right: 150px; */
-  /* margin-left: 80px; */
-  margin: 25px 50px 75px 100px;
-  /* 25px top, 50px right, 75px left, 100px bottom */
-  margin: 25px 50px 75px;
-  /* 25px top, 50px right and left, 100px bottom */
-  margin: 25px 50px;
-  /* 25px top and bottom, 50px right and left */
-  margin: 25px;
-  /* 25px top, right, left, bottom */
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 80px;
-  padding: 25px 50px 75px 100px;
-  /* 25px top, 50px right, 75px left, 100px bottom */
-  padding: 25px 50px 75px;
-  /* 25px top, 50px right, 75px left, 100px bottom */
-  padding: 25px 50px;
-  /* 25px top, 50px right, 75px left, 100px bottom */
-  padding: 25px;
-  /* 25px top, 50px right, 75px left, 100px bottom */
-  outline-style: solid;
-  outline-color: red;
-  outline-width: thin;
-  outline: 5px solid yellow;
-  outline-offset: 15px;
-
+  /* border-style: dotted solid double dashed; */
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: double;
+  border-left-style: dashed;
+  border-radius: 15px;
 }
 
-div#param2 {
+div#para3 {
   background-image: url(paper.jpg);
   background-attachment: fixed;
+  /* margin: 25px 50px 75px 100px; */
+  /* 25px top, 50px right, 75px left, 100px bottom */
+  /* margin: 25px 50px 75px; */
+  /* 25px top, 50px right and left, 100px bottom */
+  /* margin: 25px 50px; */
+  /* 25px top and bottom, 50px right and left */
+  /* margin: 25px; */
+  /* 25px top, right, left, bottom */
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-right: 75px;
+  margin-left: 100px;
+  /* padding: 25px 50px 75px 100px; */
+  /* 25px top, 50px right, 75px left, 100px bottom */
+  /* padding: 25px 50px 75px; */
+  /* 25px top, 50px right, 75px left, 100px bottom */
+  /* padding: 25px 50px; */
+  /* 25px top, 50px right, 75px left, 100px bottom */
+  /* padding: 25px; */
+  /* 25px top, 50px right, 75px left, 100px bottom */
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-right: 75px;
+  padding-left: 100px;
+}
+
+div#para4 {
+  /* outline: 5px solid yellow; */
+  outline-style: ridge;
+  outline-color: red;
+  outline-width: medium;
+  outline-offset: 5px;
+  /* text-decoration: underline red double 5px; */
   text-decoration-line: underline;
   text-decoration-color: red;
   text-decoration-style: double;
-  text-decoration-thickness: 1px;
-  text-decoration: underline red double 5px;
+  text-decoration-thickness: auto;
   text-transform: capitalize;
   text-indent: 50px;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-div#param3 {
+div#para5 {
+  /* background: #ffffff url("img_tree.png") no-repeat right top; */
   background-image: url(img_tree.png);
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: scroll;
-  /* 
-  Use the shorthand property to set the background properties in one declaration
-  background: #ffffff url("img_tree.png") no-repeat right top;
-  */
-  letter-spacing: 5px;
+  letter-spacing: 1px;
   line-height: 0.8;
-  word-spacing: 10px;
-  /* white-space: nowrap; */
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* font-style: oblique; */
-  /* font-weight: bold; */
-  /* font-variant: small-caps; */
-  /* font-size: 10px; */
-  font: italic small-caps bold 5px Georgia, serif;
-}
-
-/* unvisited link */
-a#link:link {
-  color: red;
-}
-
-/* visited link */
-a#link:visited {
-  color: green;
-}
-
-/* mouse over link */
-a#link:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a#link:active {
-  color: blue;
-}
-
-a#button:link,
-a#button:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid green;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-a#button:hover,
-a#button:active {
-  background-color: green;
-  color: white;
+  word-spacing: 0px;
+  white-space: pre-line;
+  /* font: italic small-caps bold 5px Georgia, serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 10px;
 }
